@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #B0E0E6;
+    margin-bottom: 40px;
+}
+
+.logo {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 55px;
+    color: #000;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+
+/* --- Navigation ---*/
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 0 20px 0 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+header nav ul li:last-child a {
+    margin-right: 0;
+}
+
+header nav ul li a:hover {
+    color: #BC8F8F;
+}
+
+@media all and (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    .logo {
+        margin: 14px 0 14px 20x;
+        padding-top: 0;
+        font-size: 42px;
+    }
+
+    header nav {
+        margin-top: 14px;
+    }
+}
+
+/* --- Primary Groups ---*/
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+section.light-background {
+    background-color: #B0C4DE;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: 80px 0;
+}
+
+footer {
+    background-color: #A9A9A9;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+/* --- Typography --- */
+
+h1 {
+    font-size: 28px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+h2 {
+    font-size: 26px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    margin: 0 10px;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5em;
+    margin-bottom: 0;
+}
+
+section ul li {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5em;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+main a {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+main a:link { color: #000000;}
+main a:visited { color: #000000;}
+main a:hover { color: #2F4F4F;}
+a:active { color: #000;}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    color: #000000;
+    text-align: center;
+    padding: 5px;
+}
+
+main img {
+    width: 100%;
+}
+
+img.image-profile {
+    border-radius: 8px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    flex: 1;
+    margin: 10px;
+}
+
+.item-double {
+    flex: 2;
+}
+
+/* --- (Desktop) Groups & items --- */
+
+@media all and (min-width: 700px) {
+    section {
+        padding: 0 10%;
+    }
+    .group {
+        flex-direction: row;
+    }
+}
+
+/* Contact Form D esign */
+
+form {
+    padding-right: 8px;
+}
+
+form label {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: gray;
+    font-family: "Montserrat", sans-serif;
+}
+
+form input[type="text"] {
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+form textarea {
+    height: 160px;
+    width: 100%;
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
